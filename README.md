@@ -9,14 +9,13 @@
 - open images challenges는 open image 데이터셋을 기반으로 한다. 
 
 --------------------------------------------------------------------------------------
-(1) faster_rcnn_inception_resnet_v2_baseline.ipynb
+***(1) faster_rcnn_inception_resnet_v2_baseline.ipynb***
 - tensorflow hub에서 mululer를 사용하여 모델과 image를 graph에 넣고 실행
 - resnet + Faster RCNN 사용 
 
-(2) ResNet + Faster_R_CNN
-- 직접 test image에 적용하여 학습, prediction결과 도출 
+***(2) yolo v3.ipynb***
 
-(3)
+***(2) FPN ( feature pyramid network ) custom model*** 
 ## 1. Dataset
 - No external dataset.
 - I only use FAIR's ImageNet pretrained weights for initialization, as I have described in the Official External Data Thread.
@@ -44,6 +43,10 @@ Final NMS.
 - NMS is performed again on the ensembled bounding boxes class by class. IoU threshold of NMS has been chosen carefully so that the resulting AP is maximized. Scores of box pairs with higher overlap than the threshold are added together.
 Results.
 - Model Ensembling improved private LB score from 0.56369 (single model) to 0.60231.
+
+***(4) Detectron2.ipiynb***
+- this model is based on detectron, mask-rcnn 
+
 --------------------------------------------------------------------------------------
 
 #  Object detection 
