@@ -107,3 +107,4 @@ Fater R-CNN보다 속도가 빠르나 예측율이 떨어진다.
 5. YOLO
 6. YOLO v2
 7. YoLo v3
+- Libaray code ref : https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
